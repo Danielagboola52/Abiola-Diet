@@ -1,18 +1,33 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useColorScheme } from 'react-native';
+import { Stack } from 'expo-router';
+import { FavoritesProvider } from '../context/favorites';
+import { ReadingsProvider } from '../context/readings';
+import { SettingsProvider } from '../context/settings';
+import { PlannerProvider } from '../context/plan';
+import { colors } from '../constants/colors';
+import DisclaimerGate from '../components/DisclaimerGate';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
-
-SplashScreen.preventAutoHideAsync();
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+export default function RootLayout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <SettingsProvider>
+      <FavoritesProvider>
+        <ReadingsProvider>
+          <PlannerProvider>
+            <DisclaimerGate>
+              <Stack>
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen
+                  name="recipe/[id]"
+                  options={{
+                    title: 'Recipe',
+                    headerStyle: { backgroundColor: colors.primary },
+                    headerTintColor: '#fff',
+                  }}
+                />
+              </Stack>
+            </DisclaimerGate>
+          </PlannerProvider>
+        </ReadingsProvider>
+      </FavoritesProvider>
+    </SettingsProvider>
   );
 }

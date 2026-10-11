@@ -1,0 +1,298 @@
+import { Recipe } from '../types';
+
+// Batch 3: lunch and dinner mains (40 recipes).
+// Nutrition values are approximate per serving. Have a dietitian review before release.
+
+export const batch3: Recipe[] = [
+  // ---------------- BEANS AND LEGUMES ----------------
+  {
+    id: 'b3-01', name: 'Light Ewa Agoyin with Pepper Sauce', meal: 'Lunch',
+    time: 90, servings: 4, budget: 1, gi: 'low', carbs: 30, calories: 260,
+    ingredients: ['1.5 cups brown beans', '2 tablespoons palm oil', '5 dried peppers (tatashe and ata rodo), blended', '1 onion, chopped', '1 tablespoon ground crayfish', 'Salt and seasoning'],
+    steps: ['Boil the beans until very soft, about 60 minutes, and mash lightly.', 'Heat the palm oil gently, fry the onion for 3 minutes, then add the blended pepper.', 'Cook the sauce for 15 minutes, stirring, and add crayfish and salt.', 'Serve one small ladle of beans with a spoonful of sauce.'],
+    tip: 'Traditional ewa agoyin uses a lot of oil. Two tablespoons for the whole pot is enough. Add a side of cucumber or ugwu.',
+  },
+  {
+    id: 'b3-02', name: 'Beans Pottage with Ugwu', meal: 'Lunch',
+    time: 80, servings: 4, budget: 1, gi: 'low', carbs: 28, calories: 240,
+    ingredients: ['1.5 cups brown beans', '1 tablespoon palm oil', '1 tablespoon ground crayfish', 'A big handful of ugwu, sliced', '1 pepper, 1 onion (blended)', 'Salt and seasoning'],
+    steps: ['Boil the beans until soft, about 50 minutes.', 'Add the palm oil, blended pepper, onion and crayfish.', 'Simmer 10 minutes until slightly thick.', 'Add the ugwu and cook 3 minutes.'],
+    tip: 'Ugwu adds fibre and vitamins. Do not add bread or garri on the side.',
+  },
+  {
+    id: 'b3-03', name: 'Beans Pottage with Fish', meal: 'Dinner',
+    time: 80, servings: 4, budget: 2, gi: 'low', carbs: 26, calories: 290,
+    ingredients: ['1.5 cups brown beans', '2 pieces mackerel or catfish', '1 tablespoon palm oil', '3 tomatoes, 1 pepper, 1 onion (blended)', 'Salt and seasoning'],
+    steps: ['Boil the beans until soft.', 'Add the blended mix, palm oil and seasoning.', 'Add the fish and simmer 10 minutes.'],
+    tip: 'Beans plus fish gives plenty of protein and fibre, which keeps you full and steadies sugar.',
+  },
+  {
+    id: 'b3-04', name: 'Black-Eyed Bean Salad', meal: 'Lunch',
+    time: 60, servings: 3, budget: 1, gi: 'low', carbs: 24, calories: 200,
+    ingredients: ['1 cup boiled beans, cooled', '1 tomato, diced', '1/2 cucumber, diced', '1/4 onion, chopped', '1 teaspoon oil', 'Lemon juice, salt and pepper'],
+    steps: ['Mix the beans with the vegetables.', 'Add oil, lemon juice, salt and pepper.', 'Toss gently and serve cool.'],
+    tip: 'A high-fibre meal that needs no frying. Good for lunch boxes.',
+  },
+  {
+    id: 'b3-05', name: 'Moi Moi with Mackerel', meal: 'Lunch',
+    time: 70, servings: 4, budget: 2, gi: 'low', carbs: 22, calories: 260,
+    ingredients: ['2 cups peeled beans', '2 tomatoes, 2 peppers, 1 onion', '1 tablespoon oil', '1 piece smoked or fresh mackerel, flaked', 'Salt and seasoning'],
+    steps: ['Blend the beans with the vegetables.', 'Stir in the oil, flaked fish, salt and seasoning.', 'Pour into wraps or containers.', 'Steam 45 to 60 minutes until firm.'],
+    tip: 'One wrap is a good portion. Fish makes it a complete meal with protein.',
+  },
+  {
+    id: 'b3-06', name: 'Akidi and Vegetable Pottage', meal: 'Lunch',
+    time: 75, servings: 4, budget: 2, gi: 'low', carbs: 26, calories: 240,
+    ingredients: ['1.5 cups akidi (Igbo cowpea)', '1 tablespoon palm oil', 'A handful of ugwu, sliced', '1 tablespoon ground crayfish', 'Pepper, onion and salt'],
+    steps: ['Boil the akidi until soft, about 45 minutes.', 'Add palm oil, crayfish and seasoning.', 'Add the ugwu and cook 3 minutes.'],
+    tip: 'A traditional, filling pot. Keep the portion to one small bowl.',
+  },
+  {
+    id: 'b3-07', name: 'Beans and Brown Rice (Measured)', meal: 'Lunch',
+    time: 70, servings: 4, budget: 2, gi: 'medium', carbs: 42, calories: 300,
+    ingredients: ['1/2 cup brown rice', '1 cup brown beans', '3 tomatoes, 1 pepper, 1 onion (blended)', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Boil the beans until half soft.', 'Add the rice, blended mix, oil and water to cover.', 'Cook 25 to 30 minutes until both are soft.'],
+    tip: 'Using more beans than rice lowers the overall sugar impact. Serve with a salad or ugwu.',
+  },
+  {
+    id: 'b3-08', name: 'Baked Bean and Ugwu Patties', meal: 'Dinner',
+    time: 45, servings: 4, budget: 1, gi: 'low', carbs: 20, calories: 180,
+    ingredients: ['1 cup peeled beans', 'A handful of ugwu, finely chopped', '1 pepper and 1/2 onion', '1 egg', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Blend the beans with pepper and onion into a thick paste.', 'Mix in the ugwu, egg and salt.', 'Shape into patties on an oiled tray.', 'Bake at 200°C for 25 minutes, turning once.'],
+    tip: 'Eat 2 patties with a vegetable salad. Baking avoids deep-frying oil.',
+  },
+
+  // ---------------- RICE DISHES ----------------
+  {
+    id: 'b3-09', name: 'Ofada Rice Plate (Half Cup) with Ayamase', meal: 'Lunch',
+    time: 50, servings: 1, budget: 2, gi: 'medium', carbs: 38, calories: 340,
+    ingredients: ['1/2 cup cooked ofada rice', '3 tablespoons light ayamase stew', '1 boiled egg', '1 piece grilled fish', 'Cucumber slices'],
+    steps: ['Cook the ofada rice until soft and measure 1/2 cup.', 'Serve with the stew, egg and fish.', 'Add cucumber on the side.'],
+    tip: 'Fill half the plate with vegetables and protein. The rice is a small portion, not the main part.',
+  },
+  {
+    id: 'b3-10', name: 'Brown Rice Jollof (Vegetable-Loaded)', meal: 'Lunch',
+    time: 55, servings: 4, budget: 2, gi: 'medium', carbs: 36, calories: 260,
+    ingredients: ['1 cup brown rice', '4 tomatoes, 2 peppers, 1 onion (blended)', '1 carrot and 1/2 cup green beans, diced', '1 tablespoon oil', 'Thyme, curry and salt'],
+    steps: ['Fry the blended mix in the oil for 12 minutes.', 'Add the washed rice, vegetables, seasoning and 2 cups water.', 'Cover and cook on low heat 30 to 35 minutes.'],
+    tip: 'Eat 1/2 cup of jollof with lots of vegetables and a piece of fish or chicken.',
+  },
+  {
+    id: 'b3-11', name: 'Brown Rice and Vegetable Stir-Fry', meal: 'Dinner',
+    time: 35, servings: 3, budget: 2, gi: 'medium', carbs: 34, calories: 240,
+    ingredients: ['1 cup cooked brown rice', '1 carrot, 1/2 cup green beans, 1/2 cup cabbage', '1/2 onion', '1 tablespoon oil', 'Salt, pepper and ginger'],
+    steps: ['Heat the oil and fry the onion for 1 minute.', 'Add the vegetables and stir for 5 minutes.', 'Add the rice, ginger and seasoning and stir 3 minutes.'],
+    tip: 'Use twice as many vegetables as rice. Add an egg or grilled fish for protein.',
+  },
+  {
+    id: 'b3-12', name: 'Vegetable Fried Rice (Brown, Light)', meal: 'Lunch',
+    time: 40, servings: 4, budget: 3, gi: 'medium', carbs: 35, calories: 270,
+    ingredients: ['1 cup cooked brown rice', '1 carrot, green beans and green pepper, diced', '2 spring onions', '1 tablespoon oil', 'Thyme, curry, salt'],
+    steps: ['Fry the vegetables in the oil for 5 minutes.', 'Add the rice and seasoning.', 'Stir 5 minutes and serve.'],
+    tip: 'Serve a small portion with grilled chicken or fish and a salad.',
+  },
+  {
+    id: 'b3-13', name: 'Brown Rice with Tomato Stew and Grilled Fish', meal: 'Dinner',
+    time: 55, servings: 4, budget: 2, gi: 'medium', carbs: 38, calories: 330,
+    ingredients: ['1 cup brown rice', '5 tomatoes, 2 peppers, 1 onion (blended)', '1.5 tablespoons oil', '2 pieces grilled mackerel', 'Salt and seasoning'],
+    steps: ['Cook the brown rice until soft.', 'Make the stew by frying the blended mix in oil for 15 minutes.', 'Add the fish.', 'Serve 1/2 cup rice per person.'],
+    tip: 'Measure the rice with a cup. A side salad or ugwu adds fibre.',
+  },
+  {
+    id: 'b3-14', name: 'Cauliflower Jollof', meal: 'Dinner',
+    time: 35, servings: 3, budget: 3, gi: 'low', carbs: 14, calories: 160,
+    ingredients: ['1 small cauliflower, grated', '4 tomatoes, 2 peppers, 1 onion (blended)', '1 tablespoon oil', 'Thyme, curry and salt'],
+    steps: ['Fry the blended mix in the oil for 12 minutes.', 'Add the grated cauliflower and seasoning.', 'Cover and cook 8 minutes until soft.'],
+    tip: 'A very low-carb jollof alternative. Serve with chicken or fish.',
+  },
+  {
+    id: 'b3-15', name: 'Brown Rice and Beans with Fish', meal: 'Lunch',
+    time: 65, servings: 4, budget: 2, gi: 'medium', carbs: 40, calories: 320,
+    ingredients: ['1/2 cup brown rice', '1 cup beans', '2 pieces fish', '3 tomatoes, 1 pepper, 1 onion (blended)', '1 tablespoon palm oil', 'Salt and seasoning'],
+    steps: ['Boil the beans until half soft.', 'Add rice, blended mix, oil and water.', 'Cook until soft, about 25 minutes.', 'Serve with grilled fish.'],
+    tip: 'Protein and fibre from beans and fish slow the sugar rise from the rice.',
+  },
+
+  // ---------------- FISH DISHES ----------------
+  {
+    id: 'b3-16', name: 'Grilled Tilapia with Pepper Relish and Salad', meal: 'Dinner',
+    time: 40, servings: 2, budget: 2, gi: 'low', carbs: 8, calories: 260,
+    ingredients: ['2 small tilapia, cleaned', '1 tomato, 1 pepper, 1/2 onion (blended)', '1 teaspoon oil', 'Garlic, ginger, salt', 'Cucumber and tomato for salad'],
+    steps: ['Season the fish with garlic, ginger and salt.', 'Grill 10 to 12 minutes per side.', 'Heat the blended mix in the oil for 8 minutes for relish.', 'Serve with the salad.'],
+    tip: 'Grilled fish is lean and low in carbohydrate. Serve with a large salad.',
+  },
+  {
+    id: 'b3-17', name: 'Steamed Fish with Vegetables', meal: 'Dinner',
+    time: 35, servings: 2, budget: 2, gi: 'low', carbs: 7, calories: 220,
+    ingredients: ['2 pieces fish', '1 carrot, sliced', '1/2 cup green beans', '1 tomato, 1/2 onion', 'Foil or banana leaf', 'Salt, pepper and ginger'],
+    steps: ['Season the fish.', 'Place on foil with the vegetables and fold into a parcel.', 'Steam or bake 20 to 25 minutes.'],
+    tip: 'No added oil needed. Great for a light evening meal.',
+  },
+  {
+    id: 'b3-18', name: 'Baked Mackerel with Onions and Tomatoes', meal: 'Dinner',
+    time: 35, servings: 2, budget: 1, gi: 'low', carbs: 6, calories: 280,
+    ingredients: ['2 fresh mackerel', '2 tomatoes, sliced', '1 onion, sliced', '1 teaspoon oil', 'Thyme, pepper and salt'],
+    steps: ['Season the fish and lay in a baking dish.', 'Top with onions and tomatoes and drizzle with oil.', 'Bake at 190°C for 25 minutes.'],
+    tip: 'A cheap, tasty protein source. Serve with ugwu or cabbage.',
+  },
+  {
+    id: 'b3-19', name: 'Pan-Seared Catfish with Vegetables', meal: 'Dinner',
+    time: 30, servings: 2, budget: 2, gi: 'low', carbs: 8, calories: 250,
+    ingredients: ['2 pieces catfish', '1 teaspoon oil', 'A handful of ugwu or spinach', '1 tomato, 1/2 onion', 'Salt, pepper, garlic'],
+    steps: ['Season the catfish and sear in the oil 4 minutes per side.', 'Remove, and lightly cook the vegetables in the same pan.', 'Serve together.'],
+    tip: 'Use a non-stick pan so a teaspoon of oil is enough.',
+  },
+  {
+    id: 'b3-20', name: 'Peppered Fish (Grilled Croaker)', meal: 'Dinner',
+    time: 35, servings: 2, budget: 2, gi: 'low', carbs: 6, calories: 230,
+    ingredients: ['2 pieces croaker or other fish', '2 tomatoes, 2 peppers, 1 onion (blended)', '1 teaspoon oil', 'Salt and seasoning'],
+    steps: ['Grill the fish until cooked.', 'Simmer the blended mix with oil for 10 minutes until thick.', 'Spoon over the fish.'],
+    tip: 'Grill rather than fry. Serve with a salad.',
+  },
+  {
+    id: 'b3-21', name: 'Fish with Garden Egg Sauce', meal: 'Dinner',
+    time: 35, servings: 3, budget: 2, gi: 'low', carbs: 9, calories: 240,
+    ingredients: ['2 pieces grilled fish', '6 garden eggs, diced', '2 tomatoes, 1 pepper, 1 onion', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Fry the onion, tomato and pepper in the oil for 6 minutes.', 'Add the garden egg and a splash of water; cook 8 minutes.', 'Add the fish and heat through.'],
+    tip: 'Garden egg adds bulk and fibre. A low-carb complete meal.',
+  },
+  {
+    id: 'b3-22', name: 'Fish and Cabbage Stir-Fry', meal: 'Dinner',
+    time: 25, servings: 2, budget: 1, gi: 'low', carbs: 9, calories: 220,
+    ingredients: ['1 piece cooked fish, flaked', '2 cups shredded cabbage', '1 carrot, sliced thin', '1 teaspoon oil', 'Onion, salt and pepper'],
+    steps: ['Heat the oil and fry the onion for 1 minute.', 'Add the cabbage and carrot, stirring 5 minutes.', 'Add the flaked fish and seasoning.'],
+    tip: 'Cabbage is cheap and low in carbohydrate. A quick weeknight dish.',
+  },
+
+  // ---------------- CHICKEN ----------------
+  {
+    id: 'b3-23', name: 'Grilled Chicken with Vegetable Salad', meal: 'Dinner',
+    time: 45, servings: 2, budget: 2, gi: 'low', carbs: 9, calories: 300,
+    ingredients: ['2 pieces chicken, skin removed', 'Garlic, ginger, thyme and salt', '1 tomato, 1/2 cucumber, 1/2 cup cabbage', 'Lemon juice'],
+    steps: ['Season the chicken and grill or bake for 30 to 35 minutes.', 'Chop the salad vegetables.', 'Squeeze lemon on the salad and serve with the chicken.'],
+    tip: 'Skinless chicken lowers saturated fat. Use lemon instead of salad cream.',
+  },
+  {
+    id: 'b3-24', name: 'Chicken and Vegetable Stir-Fry', meal: 'Dinner',
+    time: 30, servings: 3, budget: 2, gi: 'low', carbs: 12, calories: 270,
+    ingredients: ['250g chicken breast, sliced', '1 carrot, 1/2 cup green beans, 1 green pepper', '1/2 onion', '1 tablespoon oil', 'Ginger, garlic, salt and pepper'],
+    steps: ['Fry the chicken in the oil for 7 minutes until cooked.', 'Add the vegetables and spices.', 'Stir 5 minutes and serve.'],
+    tip: 'Lots of colourful vegetables bring fibre. Serve with a small scoop of brown rice if needed.',
+  },
+  {
+    id: 'b3-25', name: 'Baked Lemon-Pepper Chicken', meal: 'Dinner',
+    time: 50, servings: 3, budget: 2, gi: 'low', carbs: 3, calories: 260,
+    ingredients: ['3 pieces chicken, skin removed', 'Juice of 1 lemon', 'Black pepper, garlic, thyme, salt', '1 teaspoon oil'],
+    steps: ['Marinate the chicken with the lemon and spices for 30 minutes.', 'Bake at 190°C for 35 to 40 minutes, turning once.'],
+    tip: 'Very low carbohydrate. Serve with steamed vegetables.',
+  },
+  {
+    id: 'b3-26', name: 'Chicken and Bean Pottage', meal: 'Lunch',
+    time: 85, servings: 4, budget: 2, gi: 'low', carbs: 24, calories: 320,
+    ingredients: ['1 cup beans', '2 pieces chicken, skin removed', '3 tomatoes, 1 pepper, 1 onion (blended)', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Boil the beans until half soft.', 'Add the chicken, blended mix and oil.', 'Cook 25 minutes until both are soft.'],
+    tip: 'A one-pot meal with lots of protein and fibre. Add ugwu at the end.',
+  },
+  {
+    id: 'b3-27', name: 'Peppered Chicken (Baked)', meal: 'Dinner',
+    time: 55, servings: 3, budget: 2, gi: 'low', carbs: 6, calories: 280,
+    ingredients: ['3 pieces chicken, skin removed', '2 tomatoes, 2 peppers, 1 onion (blended)', '1 tablespoon oil', 'Thyme, curry and salt'],
+    steps: ['Bake the seasoned chicken for 30 minutes.', 'Simmer the blended mix in the oil for 12 minutes.', 'Toss the chicken in the sauce.'],
+    tip: 'Baking instead of frying cuts a lot of oil. Serve with a salad.',
+  },
+  {
+    id: 'b3-28', name: 'Chicken and Okra Skillet', meal: 'Dinner',
+    time: 40, servings: 3, budget: 2, gi: 'low', carbs: 9, calories: 260,
+    ingredients: ['2 pieces chicken, skin removed, cut up', '12 okra fingers, sliced', '3 tomatoes, 1 pepper, 1 onion (blended)', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Boil the chicken until tender.', 'Fry the blended mix in the oil for 10 minutes.', 'Add the chicken and okra and cook 6 minutes.'],
+    tip: 'Okra is fibre-rich and helps meals feel filling.',
+  },
+
+  // ---------------- EGGS AND VEGETABLES ----------------
+  {
+    id: 'b3-29', name: 'Cabbage and Egg Stir-Fry', meal: 'Dinner',
+    time: 20, servings: 2, budget: 1, gi: 'low', carbs: 8, calories: 190,
+    ingredients: ['2 cups shredded cabbage', '3 eggs', '1 carrot, thin sticks', '1 teaspoon oil', 'Onion, salt and pepper'],
+    steps: ['Fry the onion in the oil for 1 minute.', 'Add cabbage and carrot and stir 5 minutes.', 'Push aside, scramble the eggs, then mix together.'],
+    tip: 'Cheap and quick. Very low in carbohydrate.',
+  },
+  {
+    id: 'b3-30', name: 'Stir-Fried Ugwu and Garden Egg', meal: 'Dinner',
+    time: 25, servings: 2, budget: 1, gi: 'low', carbs: 9, calories: 170,
+    ingredients: ['A big handful of ugwu, sliced', '4 garden eggs, diced', '1 tomato, 1/2 onion', '1 teaspoon palm oil', 'Salt and pepper'],
+    steps: ['Heat the oil and fry the onion for 1 minute.', 'Add the garden egg and tomato and cook 6 minutes.', 'Add the ugwu and cook 2 minutes.'],
+    tip: 'Add a boiled egg or fish for protein. All vegetables, no starch.',
+  },
+  {
+    id: 'b3-31', name: 'Nigerian Salad with Egg and Sardine (No Mayo)', meal: 'Lunch',
+    time: 25, servings: 2, budget: 2, gi: 'low', carbs: 12, calories: 260,
+    ingredients: ['2 boiled eggs', '1/2 tin sardine', 'Lettuce, cabbage, cucumber, tomato and carrot', '1/4 cup boiled green peas (optional)', '2 tablespoons plain yoghurt', 'Lemon juice, salt and pepper'],
+    steps: ['Chop the vegetables and place in a bowl.', 'Top with sliced eggs and sardine.', 'Mix the yoghurt with lemon juice and pour over.'],
+    tip: 'Skip salad cream and sweet dressings. Plain yoghurt with lemon makes a light dressing.',
+  },
+  {
+    id: 'b3-32', name: 'Cabbage Salad with Yoghurt Dressing', meal: 'Lunch',
+    time: 10, servings: 3, budget: 1, gi: 'low', carbs: 8, calories: 80,
+    ingredients: ['2 cups shredded cabbage', '1 carrot, grated', '3 tablespoons plain yoghurt', 'Lemon juice, salt and pepper'],
+    steps: ['Mix the yoghurt with lemon juice, salt and pepper.', 'Toss with the cabbage and carrot.'],
+    tip: 'A side that adds crunch and fibre to any meal.',
+  },
+  {
+    id: 'b3-33', name: 'Okra and Tomato Skillet', meal: 'Dinner',
+    time: 20, servings: 2, budget: 1, gi: 'low', carbs: 9, calories: 150,
+    ingredients: ['12 okra fingers, sliced', '3 tomatoes, diced', '1/2 onion', '1 teaspoon oil', 'Salt, pepper and a little crayfish'],
+    steps: ['Fry the onion in the oil for 1 minute.', 'Add tomato and cook 5 minutes.', 'Add okra and cook 5 minutes.'],
+    tip: 'Pair with grilled fish or eggs for a balanced plate.',
+  },
+  {
+    id: 'b3-34', name: 'Grilled Garden Egg with Pepper Sauce', meal: 'Dinner',
+    time: 25, servings: 2, budget: 1, gi: 'low', carbs: 11, calories: 130,
+    ingredients: ['6 garden eggs', '2 tomatoes, 1 pepper, 1/2 onion (blended)', '1 teaspoon oil', 'Salt'],
+    steps: ['Grill the whole garden eggs for 10 to 12 minutes until soft.', 'Simmer the blended mix with oil for 8 minutes.', 'Slice the garden egg open and spoon the sauce over.'],
+    tip: 'Add a boiled egg for protein.',
+  },
+
+  // ---------------- MEASURED STARCH PLATES ----------------
+  {
+    id: 'b3-35', name: 'Small Sweet Potato with Vegetable Sauce and Fish', meal: 'Lunch',
+    time: 40, servings: 1, budget: 1, gi: 'medium', carbs: 38, calories: 330,
+    ingredients: ['1 small sweet potato (fist size)', '1 piece grilled fish', '1 tomato, 1/2 pepper, ugwu, 1/4 onion', '1 teaspoon oil', 'Salt'],
+    steps: ['Peel and boil the sweet potato 15 to 20 minutes.', 'Fry the vegetables lightly in the oil.', 'Serve with the fish.'],
+    tip: 'Keep to one fist-sized sweet potato. The fish and vegetables slow the sugar rise.',
+  },
+  {
+    id: 'b3-36', name: 'Boiled Unripe Plantain with Fish Sauce', meal: 'Lunch',
+    time: 35, servings: 2, budget: 1, gi: 'medium', carbs: 36, calories: 300,
+    ingredients: ['1 medium unripe plantain', '1 piece fish', '3 tomatoes, 1 pepper, 1 onion (blended)', '1 tablespoon oil', 'Salt and seasoning'],
+    steps: ['Peel and boil the plantain 15 to 20 minutes.', 'Fry the blended mix in oil for 10 minutes.', 'Add the fish and simmer 5 minutes.', 'Serve half of the plantain per person.'],
+    tip: 'Half a medium plantain per person is enough. Add a vegetable side.',
+  },
+  {
+    id: 'b3-37', name: 'Roasted Unripe Plantain with Grilled Fish', meal: 'Dinner',
+    time: 35, servings: 2, budget: 1, gi: 'medium', carbs: 32, calories: 310,
+    ingredients: ['1 small unripe plantain', '2 pieces fish', '1 tomato, 1 pepper (blended)', '1 teaspoon oil', 'Salt and seasoning'],
+    steps: ['Roast or bake the plantain until cooked, about 25 minutes.', 'Grill the seasoned fish.', 'Make a quick pepper relish with the blended mix in the oil.', 'Serve together.'],
+    tip: 'Use green plantain only. Share one small plantain between two people.',
+  },
+  {
+    id: 'b3-38', name: 'Savoury Oat Jollof', meal: 'Dinner',
+    time: 25, servings: 2, budget: 2, gi: 'medium', carbs: 28, calories: 220,
+    ingredients: ['1/2 cup plain oats', '3 tomatoes, 1 pepper, 1/2 onion (blended)', '1 teaspoon oil', '1 carrot, diced', 'Thyme, curry and salt'],
+    steps: ['Fry the blended mix in the oil for 10 minutes.', 'Add the carrot, seasoning and 1/2 cup water.', 'Stir in the oats and cook 5 minutes until thick.'],
+    tip: 'Oats have a lower GI than white rice. Add a boiled egg or fish for protein.',
+  },
+  {
+    id: 'b3-39', name: 'Savoury Guinea Corn (Sorghum) Porridge', meal: 'Dinner',
+    time: 35, servings: 3, budget: 1, gi: 'medium', carbs: 30, calories: 210,
+    ingredients: ['1/2 cup whole sorghum (guinea corn)', '1 tomato, 1/2 onion, 1/2 pepper', 'A handful of spinach or ugwu', '1 teaspoon oil', 'Salt and seasoning'],
+    steps: ['Soak the sorghum for 2 hours, then boil until soft, about 30 minutes.', 'Add the vegetables, oil and seasoning.', 'Cook 5 minutes and serve.'],
+    tip: 'A whole grain with lots of fibre. Keep to one small bowl.',
+  },
+  {
+    id: 'b3-40', name: 'Boiled Beans Plate with Grilled Fish and Cucumber', meal: 'Lunch',
+    time: 70, servings: 2, budget: 2, gi: 'low', carbs: 28, calories: 320,
+    ingredients: ['1 cup boiled beans', '1 piece grilled fish', '1/2 cucumber and 1 tomato, sliced', '1 teaspoon palm oil', 'Pepper and salt'],
+    steps: ['Season the boiled beans with palm oil, pepper and salt.', 'Serve with the grilled fish.', 'Add the cucumber and tomato on the side.'],
+    tip: 'A simple, balanced, high-fibre plate. Beans, fish and vegetables follow the plate method.',
+  },
+];
